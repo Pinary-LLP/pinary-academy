@@ -1,0 +1,9 @@
+{
+  "name": "pinary-academy-static-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static mobile-first website for Pinary Academy.",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

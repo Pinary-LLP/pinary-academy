@@ -1,0 +1,21 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+  <path d="M0 0H1200V630H0V0Z" fill="#FFFFFF"/>
+  <path d="M0 540H1200V630H0V540Z" fill="#EAF7EF"/>
+  <g opacity="0.18">
+    <path d="M80 80H1120" stroke="#23e0cf"/>
+    <path d="M80 150H1120" stroke="#23e0cf"/>
+    <path d="M80 220H1120" stroke="#23e0cf"/>
+    <path d="M80 290H1120" stroke="#23e0cf"/>
+    <path d="M80 360H1120" stroke="#23e0cf"/>
+    <path d="M80 430H1120" stroke="#23e0cf"/>
+  </g>
+  <image href="pinary-logo.svg" x="76" y="64" width="420" height="118"/>
+  <text x="80" y="288" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="900">Job-Oriented</text>
+  <text x="80" y="376" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="900">Coding Course</text>
+  <text x="84" y="462" fill="#0078d7" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700">For beginners in Kerala. Mentor support. Weekly reviews.</text>
+  <text x="80" y="596" fill="#0F172A" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="900">Learn. Think. Innovate.</text>
+  <circle cx="1070" cy="556" r="16" fill="#23e0cf"/>
+  <circle cx="1115" cy="556" r="16" fill="#0078d7"/>
+  <circle cx="1160" cy="556" r="16" fill="#008cff"/>
+</svg>
