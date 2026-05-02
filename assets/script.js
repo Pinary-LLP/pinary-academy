@@ -14,7 +14,11 @@ const updateStickyCta = () => {
     return;
   }
 
-  mobileStickyCta.classList.toggle("is-visible", window.scrollY > 520);
+  const formRect = leadForm?.getBoundingClientRect();
+  const formIsVisible =
+    formRect && formRect.top < window.innerHeight - 80 && formRect.bottom > 80;
+
+  mobileStickyCta.classList.toggle("is-visible", window.scrollY > 520 && !formIsVisible);
 };
 
 updateStickyCta();
@@ -101,6 +105,6 @@ leadForm?.addEventListener("submit", async (event) => {
     setStatus("Something went wrong. Please try again or contact us directly on WhatsApp.", "error");
   } finally {
     submitButton.disabled = false;
-    submitButton.textContent = "Send enquiry";
+    submitButton.textContent = "Submit Registration";
   }
 });

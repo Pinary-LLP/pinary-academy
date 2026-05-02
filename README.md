@@ -27,6 +27,13 @@ Then open `http://127.0.0.1:4173`.
 
 The site is plain HTML, so headings, copy, links, contact details, and course content are crawlable without JavaScript. Before publishing, replace `https://pinary.academy/` in `index.html`, `robots.txt`, and `sitemap.xml` with the final domain if it is different.
 
+## Image Sources
+
+- Hero classroom coding image: Mikhail Seleznev on Unsplash - https://unsplash.com/photos/young-man-typing-on-a-laptop-in-a-classroom-HKnvq4krutI
+- Secondary student coding image: Hasnain Ayaz on Unsplash - https://unsplash.com/photos/person-working-on-a-laptop-coding-and-analyzing-data-Su1XYFlftXA
+
+The site stores optimized local copies in `assets/pinary-hero-classroom.jpg` and `assets/pinary-student-coding.jpg` for fast static loading. Replace them with real Pinary mentor/student photos when available.
+
 ## Connect Google Sheets
 
 1. Create a Google Sheet.

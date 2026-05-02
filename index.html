@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Join Pinary Academy's job-oriented coding course for beginners in Kerala. Learn programming, AI-integrated development, Git, projects, teamwork, and freelance skills with mentor support and weekly reviews."
+      content="Pinary Academy is a coding institute in Kerala offering a job-oriented coding course for beginners. Learn coding, programming, AI-assisted development, Git, projects, and career skills with mentor support and weekly reviews."
     />
     <meta
       name="keywords"
-      content="coding institute in Kerala, job-oriented coding course, learn programming for beginners, AI integrated development course, programming course for students, coding course with mentor support, Pinary Academy"
+      content="coding institute in Kerala, programming course, job-oriented coding course, learn coding, coding classes, programming course for beginners, AI assisted development course, coding academy Kerala"
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#ffffff" />
@@ -19,7 +19,7 @@
     <meta property="og:title" content="Pinary Academy | Job-Oriented Coding Course in Kerala" />
     <meta
       property="og:description"
-      content="Learn coding with mentor support, weekly reviews, projects, Git, AI-integrated development, teamwork, and freelance skills."
+      content="Learn coding with mentor support, weekly work reviews, practical projects, Git, AI-assisted development, and career-focused training."
     />
     <meta property="og:url" content="https://pinary.academy/" />
     <meta property="og:image" content="https://pinary.academy/assets/pinary-og.svg" />
@@ -27,7 +27,7 @@
     <meta name="twitter:title" content="Pinary Academy | Job-Oriented Coding Course in Kerala" />
     <meta
       name="twitter:description"
-      content="A beginner-friendly coding course in Kerala with mentor support, weekly reviews, projects, Git, and career-focused training."
+      content="A beginner-friendly coding institute in Kerala with mentor support, weekly reviews, projects, Git, and career-focused training."
     />
     <meta name="twitter:image" content="https://pinary.academy/assets/pinary-og.svg" />
     <title>Pinary Academy | Job-Oriented Coding Course in Kerala</title>
@@ -37,13 +37,11 @@
           theme: {
             extend: {
               colors: {
-                ink: "#07111F",
-                slate: "#C5D2DD",
+                ink: "#07111f",
                 ocean: "#0078d7",
                 aqua: "#008cff",
                 cyan: "#23e0cf",
-                trust: "#E8F7FF",
-                gold: "#008cff",
+                paper: "#f7fbff",
               },
               fontFamily: {
                 sans: [
@@ -55,9 +53,6 @@
                   "Segoe UI",
                   "sans-serif",
                 ],
-              },
-              boxShadow: {
-                soft: "0 20px 60px rgba(16, 24, 32, 0.14)",
               },
             },
           },
@@ -73,138 +68,170 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "EducationalOrganization",
-        "name": "Pinary Academy",
-        "url": "https://pinary.academy/",
-        "logo": "https://pinary.academy/assets/pinary-logo.svg",
-          "slogan": "Learn coding with mentor support, weekly reviews, and career-focused project training.",
-        "address": {
-          "@type": "PostalAddress",
-          "addressRegion": "Kerala",
-          "addressCountry": "IN"
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "Admissions",
-          "telephone": "+91-00000-00000",
-          "email": "hello@pinary.academy"
-        },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Pinary Academy Courses",
-          "itemListElement": [
-            {
-              "@type": "Course",
-              "name": "Job-Oriented Coding Course for Beginners",
-              "description": "Beginner-friendly coding course covering programming foundations, AI-integrated development, Git, projects, teamwork, DevOps basics, freelance skills, and weekly mentor reviews.",
-              "provider": {
-                "@type": "EducationalOrganization",
-                "name": "Pinary Academy",
-                "sameAs": "https://pinary.academy/"
-              },
-              "educationalLevel": "Beginner to career-ready",
-              "teaches": [
-                "Programming foundations",
-                "AI-integrated development",
-                "Git workflow",
-                "DevOps basics",
-                "Project building",
-                "Teamwork",
-                "Leadership",
-                "Freelance project delivery",
-                "Client communication"
-              ]
+        "@graph": [
+          {
+            "@type": "EducationalOrganization",
+            "@id": "https://pinary.academy/#organization",
+            "name": "Pinary Academy",
+            "url": "https://pinary.academy/",
+            "logo": "https://pinary.academy/assets/pinary-logo.svg",
+            "slogan": "Learn coding with mentor support, weekly reviews, and career-focused project training.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressRegion": "Kerala",
+              "addressCountry": "IN"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "Admissions counselling",
+              "telephone": "+91-00000-00000",
+              "email": "hello@pinary.academy"
             }
-          ]
-        }
+          },
+          {
+            "@type": "Course",
+            "@id": "https://pinary.academy/#course",
+            "name": "Job-Oriented Coding Course for Beginners",
+            "description": "A beginner-friendly programming course covering coding foundations, AI-assisted development, Git, project delivery, teamwork, communication, and freelance/client skills with mentor support and weekly reviews.",
+            "provider": {
+              "@id": "https://pinary.academy/#organization"
+            },
+            "educationalLevel": "Beginner",
+            "teaches": [
+              "Programming foundations",
+              "AI-assisted development",
+              "Git and team workflow",
+              "Project delivery",
+              "Communication",
+              "Freelance and client skills"
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://pinary.academy/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is this coding course suitable for complete beginners?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Pinary is designed for students and beginners who need a structured path, mentor support, and weekly review instead of random tutorials."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Will I learn AI tools for development?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. The course teaches how to use AI tools for planning, debugging, documentation, and faster development while still building strong fundamentals."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does weekly review work?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Students submit work every week. Mentors review code quality, structure, clarity, and communication so students can fix mistakes and improve standards."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does Pinary give a job guarantee?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No fake job guarantee is promised. Pinary focuses on job-oriented training, portfolio-ready work, review habits, communication, and career confidence."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Will this help me with freelance work?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Students learn how to understand client requirements, give quotations, communicate professionally, close basic projects, and deliver work properly."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What happens after I submit the counselling form?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Pinary team will contact you with course details, batch availability, and guidance based on your current level and goal."
+                }
+              }
+            ]
+          }
+        ]
       }
     </script>
   </head>
-  <body class="bg-white text-ink antialiased">
+  <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    <a href="#registration" class="mobile-sticky-cta">
-      Register for Free Counselling
-    </a>
+    <a href="#registration" class="mobile-sticky-cta">Book Free Counselling</a>
 
     <header class="site-header">
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="#" class="brand-link" aria-label="Pinary home">
-          <img
-            src="assets/pinary-logo.svg"
-            alt="Pinary logo"
-            width="680"
-            height="190"
-            class="brand-logo"
-          />
+        <a href="#" class="brand-link" aria-label="Pinary Academy home">
+          <img src="assets/pinary-logo.svg" alt="Pinary Academy logo" width="680" height="190" class="brand-logo" />
         </a>
         <div class="nav-menu">
-          <a class="nav-link" href="#course">Course</a>
-          <a class="nav-link" href="#why-pinary">Why Pinary</a>
-          <a class="nav-link" href="#quality">Quality</a>
-          <a class="nav-link" href="#registration">Register</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#outcomes">Outcomes</a>
+          <a href="#mentors">Mentors</a>
+          <a href="#faq">FAQ</a>
         </div>
-        <a href="#registration" class="header-cta">
-          Free counselling
-        </a>
+        <a href="#registration" class="header-cta">Book Free Counselling</a>
       </nav>
     </header>
 
     <main id="main-content">
-      <section class="hero-band">
-        <div class="hero-grid" aria-hidden="true"></div>
-
-        <div class="hero-inner">
-          <div class="hero-copy">
-            <p class="eyebrow-pill">
-              <i data-lucide="sparkles" aria-hidden="true"></i>
-              Beginner-friendly coding institute in Kerala
+      <section class="hero-section">
+        <div class="section-wrap hero-layout">
+          <div class="hero-content">
+            <p class="eyebrow">
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+              Coding institute in Kerala for serious beginners
             </p>
-            <h1>
-              Job-Oriented Coding Course for Beginners in Kerala
-            </h1>
+            <h1>Job-Oriented Coding Course in Kerala for Beginners Who Want Real Skills</h1>
             <p class="hero-lede">
-              Learn programming, AI-integrated development, Git, teamwork, and freelance skills with mentor support and weekly quality reviews. Built for students who want career growth, confidence, and real project experience.
+              Learn coding, programming foundations, AI-assisted development, Git, teamwork, and project delivery with mentor support and weekly work reviews.
             </p>
-
-            <div class="hero-proof-grid">
-              <div class="hero-proof">
-                <i data-lucide="route" aria-hidden="true"></i>
-                <span>Beginner-friendly</span>
-              </div>
-              <div class="hero-proof">
-                <i data-lucide="user-check" aria-hidden="true"></i>
-                <span>Mentor-guided</span>
-              </div>
-              <div class="hero-proof">
-                <i data-lucide="badge-check" aria-hidden="true"></i>
-                <span>Career-focused</span>
-              </div>
-            </div>
-
             <div class="hero-actions">
-              <a href="#registration" class="primary-cta">
-                Register for a Free Counselling Call
-                <i data-lucide="arrow-right" aria-hidden="true"></i>
-              </a>
-              <a href="#course" class="secondary-cta">
-                View Course Details
-              </a>
+              <a href="#registration" class="primary-cta">Book Free Counselling <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+              <a href="#roadmap" class="secondary-cta">View Learning Roadmap</a>
             </div>
-            <p class="urgency-copy">Next batch seats are limited. Apply early to get mentor review access.</p>
+            <p class="urgency-copy">Upcoming batch seats are limited. Apply early to get counselling and mentor review access.</p>
+
+            <div class="hero-proof" aria-label="Pinary course trust signals">
+              <div><strong>Weekly</strong><span>mentor review</span></div>
+              <div><strong>Project</strong><span>based learning</span></div>
+              <div><strong>Career</strong><span>and freelance skills</span></div>
+            </div>
           </div>
 
-          <form id="leadForm" class="contact-form hero-form" aria-label="Pinary course registration form" novalidate>
+          <aside class="hero-media" aria-label="Pinary learning environment">
+            <img
+              src="assets/pinary-hero-classroom.jpg"
+              width="1200"
+              height="900"
+              alt="Student learning coding with laptop in a classroom"
+            />
+            <div class="media-caption">
+              <span>Mentor-led review system</span>
+              <strong>Learn, submit, improve, repeat.</strong>
+            </div>
+          </aside>
+
+          <form id="leadForm" class="lead-form hero-form" aria-label="Pinary course registration form" novalidate>
             <div class="form-intro" id="registration">
-              <p class="section-kicker">Free counselling</p>
-              <h2>Register for a Free Counselling Call</h2>
-              <p>Fill this form and the Pinary team will contact you with course details, batch availability, and the right learning path for your current level.</p>
+              <p class="section-kicker">Admissions counselling</p>
+              <h2>Book a Free Counselling Call</h2>
+              <p>Share your details. We will call you with course details, batch availability, and the right learning path.</p>
             </div>
             <input type="hidden" name="source" value="Pinary website" />
             <label class="honeypot-field" aria-hidden="true">
               Company
               <input type="text" name="company" tabindex="-1" autocomplete="off" />
             </label>
-
             <label>
               <span>Name</span>
               <input required type="text" name="name" placeholder="Your name" autocomplete="name" />
@@ -233,296 +260,267 @@
                 <option>Not Sure</option>
               </select>
             </label>
-            <button id="submitButton" type="submit">
-              Submit Registration
-            </button>
+            <button id="submitButton" type="submit">Submit Registration</button>
             <p class="form-microcopy">No spam. We will contact you only about Pinary course admission and counselling.</p>
             <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
             <noscript>
-              <p class="form-status error">
-                Please email hello@pinary.academy because this form needs JavaScript to send registrations.
-              </p>
+              <p class="form-status error">Please email hello@pinary.academy because this form needs JavaScript to send registrations.</p>
             </noscript>
           </form>
         </div>
       </section>
 
-      <section class="method-strip" aria-label="Pinary learning method">
-        <div class="method-heading">
-          <p class="section-kicker">A structured path for serious learners</p>
-          <h2>Learn coding with mentor support, weekly reviews, and career-focused project training.</h2>
-        </div>
-        <div class="method-card">
-          <i data-lucide="user-check" aria-hidden="true"></i>
-          <div>
-            <strong>Mentor-supported self-study</strong>
-            <span>So you never feel stuck alone while learning programming.</span>
-          </div>
-        </div>
-        <div class="method-card">
-          <i data-lucide="badge-check" aria-hidden="true"></i>
-          <div>
-            <strong>Weekly quality checks</strong>
-            <span>Improve your coding standards, clarity, and confidence.</span>
-          </div>
-        </div>
-        <div class="method-card">
-          <i data-lucide="git-branch" aria-hidden="true"></i>
-          <div>
-            <strong>Real project workflow</strong>
-            <span>Practice Git, DevOps basics, and team communication.</span>
-          </div>
-        </div>
-        <div class="method-card">
-          <i data-lucide="briefcase-business" aria-hidden="true"></i>
-          <div>
-            <strong>Career skills</strong>
-            <span>Build resume confidence, freelance quoting, sales, and delivery habits.</span>
-          </div>
+      <section class="trust-strip" aria-label="Why students trust Pinary">
+        <div class="section-wrap trust-grid">
+          <div><i data-lucide="user-check" aria-hidden="true"></i><span>Mentor-guided</span></div>
+          <div><i data-lucide="clipboard-check" aria-hidden="true"></i><span>Weekly work review</span></div>
+          <div><i data-lucide="folder-code" aria-hidden="true"></i><span>Project-based learning</span></div>
+          <div><i data-lucide="briefcase-business" aria-hidden="true"></i><span>Career and freelance skills</span></div>
         </div>
       </section>
 
-      <section class="section-deep problem-section">
-        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div class="section-layout">
-            <div>
-              <p class="section-kicker">The real problem</p>
-              <h2 class="section-title">Learning coding alone is hard. Learning without direction is harder.</h2>
-              <p class="muted-copy mt-4 text-base leading-7">
-                Many students watch tutorials but still struggle to build real projects, explain their work, use Git, or work confidently with a team. Pinary helps you move from confused beginner to disciplined, career-ready learner with a clear weekly system.
-              </p>
-            </div>
-            <div class="problem-panel">
-              <article>
-                <i data-lucide="circle-help" aria-hidden="true"></i>
-                <strong>Random tutorials create confusion</strong>
-                <span>You learn pieces, but not a career-ready workflow.</span>
-              </article>
-              <article>
-                <i data-lucide="git-pull-request" aria-hidden="true"></i>
-                <strong>Real work needs more than code</strong>
-                <span>You need Git, communication, reviews, and delivery habits.</span>
-              </article>
-              <article>
-                <i data-lucide="target" aria-hidden="true"></i>
-                <strong>Clear weekly goals build confidence</strong>
-                <span>Mentor review helps you improve instead of guessing.</span>
-              </article>
-            </div>
+      <section class="section editorial-section">
+        <div class="section-wrap two-column">
+          <div>
+            <p class="section-kicker">Why this exists</p>
+            <h2>Most beginners do not need more random tutorials. They need structure.</h2>
           </div>
-        </div>
-      </section>
-
-      <section id="course" class="section-surface py-12 sm:py-16">
-        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div class="max-w-2xl">
-            <p class="section-kicker">Course breakdown</p>
-            <h2 class="section-title">What you will learn in the Pinary coding program</h2>
-            <p class="muted-copy mt-4 text-base leading-7">
-              A practical, job-oriented coding course for students who want to learn programming, build projects, and become more confident for real opportunities.
+          <div class="editorial-copy">
+            <p>
+              Students often learn small pieces from YouTube but still struggle to build a complete project, use Git properly, explain their work, or work with a team.
+            </p>
+            <p>
+              Pinary turns self-study into a guided system: clear weekly tasks, mentor feedback, practical project delivery, and career-focused communication.
             </p>
           </div>
+        </div>
+      </section>
 
-          <div class="skill-grid">
-            <div class="skill-row">
-              <span class="skill-icon"><i data-lucide="code-2" aria-hidden="true"></i></span>
+      <section class="section benefit-section" id="course">
+        <div class="section-wrap">
+          <div class="section-heading">
+            <p class="section-kicker">Course benefits</p>
+            <h2>Built for students who want confidence, not just certificates</h2>
+            <p>A practical programming course for beginners who want to learn coding and become ready for real development work.</p>
+          </div>
+          <div class="benefit-grid">
+            <article>
+              <i data-lucide="code-2" aria-hidden="true"></i>
+              <h3>Learn fundamentals clearly</h3>
+              <p>Understand logic, problem solving, clean code, and how developers think before jumping between tools.</p>
+            </article>
+            <article>
+              <i data-lucide="git-pull-request" aria-hidden="true"></i>
+              <h3>Work like a real team</h3>
+              <p>Practice Git, task submission, review habits, deployment basics, and professional updates.</p>
+            </article>
+            <article>
+              <i data-lucide="message-square-text" aria-hidden="true"></i>
+              <h3>Explain your work better</h3>
+              <p>Build the confidence to discuss projects, ask better questions, and present progress clearly.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section roadmap-section" id="roadmap">
+        <div class="section-wrap roadmap-layout">
+          <div class="roadmap-intro">
+            <p class="section-kicker">Learning roadmap</p>
+            <h2>A calm path from beginner to project-ready</h2>
+            <p>Each phase is designed to create a visible improvement in your coding, workflow, and confidence.</p>
+            <a href="#registration" class="inline-cta">Book Free Counselling</a>
+          </div>
+          <div class="roadmap-list">
+            <article>
+              <span>01</span>
               <div>
-                <h3>Programming Foundations</h3>
-                <p>Learn how to think, solve problems, and write clean code as a beginner.</p>
+                <h3>Foundation</h3>
+                <p>Programming basics, logic, problem solving, and clean code habits.</p>
               </div>
-            </div>
-            <div class="skill-row">
-              <span class="skill-icon"><i data-lucide="brain-circuit" aria-hidden="true"></i></span>
+            </article>
+            <article>
+              <span>02</span>
               <div>
-                <h3>AI-Integrated Development</h3>
-                <p>Use AI tools for planning, debugging, documentation, and faster development.</p>
+                <h3>AI-assisted development</h3>
+                <p>Use AI for planning, debugging, documentation, and faster development without losing fundamentals.</p>
               </div>
-            </div>
-            <div class="skill-row">
-              <span class="skill-icon"><i data-lucide="workflow" aria-hidden="true"></i></span>
+            </article>
+            <article>
+              <span>03</span>
               <div>
-                <h3>Git, DevOps & Team Workflow</h3>
-                <p>Learn branches, reviews, deployment basics, and professional submission habits.</p>
+                <h3>Git and team workflow</h3>
+                <p>Branches, pull requests, task updates, reviews, and proper submission habits.</p>
               </div>
-            </div>
-            <div class="skill-row">
-              <span class="skill-icon"><i data-lucide="folder-code" aria-hidden="true"></i></span>
+            </article>
+            <article>
+              <span>04</span>
               <div>
-                <h3>Project Building</h3>
-                <p>Build practical work that can be shown in interviews or freelance conversations.</p>
+                <h3>Project delivery</h3>
+                <p>Build portfolio-ready work that can be discussed in interviews or client conversations.</p>
               </div>
-            </div>
-            <div class="skill-row">
-              <span class="skill-icon"><i data-lucide="messages-square" aria-hidden="true"></i></span>
+            </article>
+            <article>
+              <span>05</span>
               <div>
-                <h3>Leadership & Communication</h3>
-                <p>Learn updates, ownership, teamwork, and professional confidence.</p>
+                <h3>Communication</h3>
+                <p>Daily updates, ownership, team behaviour, leadership basics, and confidence.</p>
               </div>
-            </div>
-            <div class="skill-row">
-              <span class="skill-icon"><i data-lucide="badge-dollar-sign" aria-hidden="true"></i></span>
+            </article>
+            <article>
+              <span>06</span>
               <div>
-                <h3>Freelance & Sales Skills</h3>
-                <p>Learn how to find leads, give quotations, close a sale, and deliver work properly.</p>
+                <h3>Freelance/client skills</h3>
+                <p>Finding leads, understanding requirements, quotation basics, closing, and delivery.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section mentor-section" id="mentors">
+        <div class="section-wrap mentor-layout">
+          <div class="mentor-image">
+            <img
+              src="assets/pinary-student-coding.jpg"
+              width="1000"
+              height="750"
+              alt="Student coding on a laptop during a focused study session"
+              loading="lazy"
+            />
+          </div>
+          <div class="mentor-copy">
+            <p class="section-kicker">Mentor credibility</p>
+            <h2>Guided by mentors who review how you actually work</h2>
+            <p>
+              Pinary is not built around spoon-feeding. Mentors help students improve by reviewing submissions, asking better questions, and pushing work toward cleaner standards.
+            </p>
+            <div class="mentor-slots" aria-label="Mentor credibility placeholders">
+              <div>
+                <strong>Development mentor</strong>
+                <span>Code quality, Git workflow, project structure</span>
+              </div>
+              <div>
+                <strong>Career mentor</strong>
+                <span>Communication, confidence, freelance readiness</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="why-pinary" class="section-deep py-12 sm:py-16">
-        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div class="section-layout">
-            <div>
-              <p class="section-kicker">Why choose us</p>
-              <h2 class="section-title">Why students choose Pinary Academy</h2>
-              <p class="muted-copy mt-4 text-base leading-7">
-                Pinary is built for beginners and struggling learners who need structure, accountability, and practical career direction.
-              </p>
-              <a href="#registration" class="inline-section-cta">Talk to a Mentor</a>
-            </div>
-            <div class="trust-list">
-              <div><i data-lucide="check-circle-2" aria-hidden="true"></i><span>Designed for beginners and struggling learners.</span></div>
-              <div><i data-lucide="check-circle-2" aria-hidden="true"></i><span>Mentor guidance without spoon-feeding.</span></div>
-              <div><i data-lucide="check-circle-2" aria-hidden="true"></i><span>Weekly review keeps you accountable.</span></div>
-              <div><i data-lucide="check-circle-2" aria-hidden="true"></i><span>Focus on job-ready and freelance-ready skills.</span></div>
-              <div><i data-lucide="check-circle-2" aria-hidden="true"></i><span>Learn how real development teams work.</span></div>
-              <div><i data-lucide="check-circle-2" aria-hidden="true"></i><span>Simple, practical, no confusion.</span></div>
-            </div>
+      <section class="section outcomes-section" id="outcomes">
+        <div class="section-wrap">
+          <div class="section-heading">
+            <p class="section-kicker">Student outcomes</p>
+            <h2>What students should be able to do after consistent practice</h2>
+            <p>No fake guarantees. The focus is on practical progress students can show, explain, and improve.</p>
+          </div>
+          <div class="outcome-grid">
+            <article><span>Portfolio-ready projects</span><p>Build work that can be shown during interviews or freelance discussions.</p></article>
+            <article><span>Code review habits</span><p>Submit, receive feedback, fix, and improve instead of simply moving on.</p></article>
+            <article><span>Interview confidence</span><p>Explain decisions, tools, bugs, and project flow in a clearer way.</p></article>
+            <article><span>Client communication</span><p>Understand requirements, give updates, quote work, and deliver professionally.</p></article>
           </div>
         </div>
       </section>
 
-      <section id="quality" class="quality-section py-12 sm:py-16">
-        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div class="quality-layout">
-            <div>
-              <p class="section-kicker">Weekly quality checks</p>
-              <h2 class="section-title">Every week, your work gets reviewed</h2>
-              <p class="muted-copy mt-4 text-base leading-7">
-                Pinary reviews the quality of each learner's work so they improve like real developers: by building, submitting, receiving feedback, and fixing with care.
-              </p>
-            </div>
-            <div class="quality-panel">
-              <div class="quality-step">
-                <span>1</span>
-                <div class="quality-copy">
-                  <h3>Submit real work</h3>
-                  <p>Complete tasks and submit through a proper workflow.</p>
-                </div>
-              </div>
-              <div class="quality-step">
-                <span>2</span>
-                <div class="quality-copy">
-                  <h3>Get mentor feedback</h3>
-                  <p>Improve code quality, clarity, structure, and communication.</p>
-                </div>
-              </div>
-              <div class="quality-step">
-                <span>3</span>
-                <div class="quality-copy">
-                  <h3>Fix and resubmit</h3>
-                  <p>Learn by improving the same work, not just moving on.</p>
-                </div>
-              </div>
-              <div class="quality-step">
-                <span>4</span>
-                <div class="quality-copy">
-                  <h3>Grow standards weekly</h3>
-                  <p>Build stronger habits, confidence, and portfolio quality.</p>
-                </div>
-              </div>
-            </div>
+      <section class="section proof-section">
+        <div class="section-wrap proof-layout">
+          <div>
+            <p class="section-kicker">Transparent proof</p>
+            <h2>Trust comes from the system, not fake promises</h2>
+            <p>
+              Until verified student stories are available, Pinary presents the process honestly: structured tasks, mentor reviews, project work, and clear counselling.
+            </p>
+          </div>
+          <div class="proof-panel">
+            <p class="proof-label">Student feedback style example</p>
+            <blockquote>
+              “I was learning randomly before. Weekly review helped me understand what to fix and how to submit work properly.”
+            </blockquote>
+            <span>Replace with verified student quote after batch feedback is approved.</span>
           </div>
         </div>
       </section>
 
-      <section class="section-surface py-12 sm:py-16">
-        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div class="outcome-layout">
-            <div class="lg:col-span-1">
-              <p class="section-kicker">Trust signals</p>
-              <h2 class="section-title">Built for students who want serious growth</h2>
-              <p class="muted-copy mt-4 text-base leading-7">
-                We use verified proof only. Until real testimonials are approved, Pinary focuses on transparent process, clear review, and practical student support.
-              </p>
-            </div>
-            <div class="outcome-grid">
-              <article class="outcome-card">
-                <i data-lucide="square-terminal" aria-hidden="true"></i>
-                <h3>Weekly mentor review system</h3>
-                <p>Your work is reviewed regularly so improvement becomes visible and measurable.</p>
-              </article>
-              <article class="outcome-card">
-                <i data-lucide="lightbulb" aria-hidden="true"></i>
-                <h3>Practical project-based learning</h3>
-                <p>Build work that helps you explain your skills with confidence.</p>
-              </article>
-              <article class="outcome-card">
-                <i data-lucide="presentation" aria-hidden="true"></i>
-                <h3>Career and freelance skill training</h3>
-                <p>Learn communication, quoting, sales basics, and delivery habits.</p>
-              </article>
-              <article class="outcome-card">
-                <i data-lucide="file-check-2" aria-hidden="true"></i>
-                <h3>Kerala-focused student support</h3>
-                <p>Simple, local, student-friendly guidance for learners in Kerala and India.</p>
-              </article>
-            </div>
+      <section class="mid-cta">
+        <div class="section-wrap mid-cta-layout">
+          <div>
+            <p class="section-kicker">Need guidance?</p>
+            <h2>Not sure whether this course matches your current level?</h2>
+            <p>Submit the form. The Pinary team will call you, understand your goal, and explain the right next step.</p>
+          </div>
+          <a href="#registration" class="primary-cta">Book Free Counselling <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="faq">
+        <div class="section-wrap faq-layout">
+          <div>
+            <p class="section-kicker">FAQ</p>
+            <h2>Questions students usually ask before joining</h2>
+            <p class="faq-note">Clear answers first. Counselling call after that.</p>
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary>Is this coding course suitable for complete beginners?</summary>
+              <p>Yes. Pinary is designed for students and beginners who need a structured path, mentor support, and weekly review instead of random tutorials.</p>
+            </details>
+            <details>
+              <summary>Will I learn AI tools for development?</summary>
+              <p>Yes. You will learn how to use AI tools for planning, debugging, documentation, and faster development while still building strong fundamentals.</p>
+            </details>
+            <details>
+              <summary>How does weekly review work?</summary>
+              <p>You submit work every week. Mentors review code quality, structure, clarity, and communication so you can fix mistakes and improve standards.</p>
+            </details>
+            <details>
+              <summary>Does Pinary give a job guarantee?</summary>
+              <p>No fake job guarantee is promised. Pinary focuses on job-oriented training, portfolio-ready work, review habits, communication, and career confidence.</p>
+            </details>
+            <details>
+              <summary>Will this help me with freelance work?</summary>
+              <p>Yes. You will learn how to understand client requirements, give quotations, communicate professionally, close basic projects, and deliver work properly.</p>
+            </details>
+            <details>
+              <summary>What happens after I submit the counselling form?</summary>
+              <p>The Pinary team will contact you with course details, batch availability, and guidance based on your current level and goal.</p>
+            </details>
           </div>
         </div>
       </section>
 
-      <section class="mid-cta-section">
-        <div>
-          <p class="section-kicker">Need guidance?</p>
-          <h2>Not sure if this course is right for you?</h2>
-          <p>Share your details. Our team will call you, understand your current level, and guide you on the best next step.</p>
-          <a href="#registration" class="primary-cta">Talk to a Mentor <i data-lucide="arrow-right" aria-hidden="true"></i></a>
-        </div>
-      </section>
-
-      <section id="contact" class="contact-section py-12 pb-24 sm:py-16 md:pb-16">
-        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div class="contact-layout">
-            <div>
-              <p class="section-kicker">Final step</p>
-              <h2 class="section-title">Start your coding journey with proper guidance</h2>
-              <p class="muted-copy mt-4 text-base leading-7">
-                If you are serious about learning programming and building career-ready skills, Pinary gives you the structure, mentor support, and review system to grow with confidence.
-              </p>
-              <a href="#registration" class="inline-section-cta">Register Now</a>
-              <address class="contact-details mt-6 space-y-3 text-sm font-semibold not-italic">
-                <p><span class="contact-label">Phone:</span> +91 00000 00000</p>
-                <p><span class="contact-label">WhatsApp:</span> +91 00000 00000</p>
-                <p>
-                  <span class="contact-label">Email:</span>
-                  <a href="mailto:hello@pinary.academy">hello@pinary.academy</a>
-                </p>
-                <p><span class="contact-label">Location:</span> Kerala, India</p>
-              </address>
-            </div>
-            <div class="testimonial-card">
-              <p class="section-kicker">Transparent promise</p>
-              <blockquote>
-                Pinary does not need fake promises. We focus on structured learning, weekly feedback, practical projects, and career-focused skills students can actually build.
-              </blockquote>
-              <span>Verified student stories can be added after real batch feedback is approved.</span>
-            </div>
+      <section class="section final-section" id="contact">
+        <div class="section-wrap final-layout">
+          <div>
+            <p class="section-kicker">Final step</p>
+            <h2>Start learning coding with proper guidance</h2>
+            <p>
+              If you are serious about learning programming and building career-ready skills, Pinary gives you the structure, mentor support, and review system to grow with confidence.
+            </p>
+            <a href="#registration" class="primary-cta">Book a Free Counselling Call <i data-lucide="arrow-right" aria-hidden="true"></i></a>
           </div>
+          <address class="contact-details">
+            <p><span>Phone</span> +91 00000 00000</p>
+            <p><span>WhatsApp</span> +91 00000 00000</p>
+            <p><span>Email</span> <a href="mailto:hello@pinary.academy">hello@pinary.academy</a></p>
+            <p><span>Location</span> Kerala, India</p>
+          </address>
         </div>
       </section>
     </main>
 
-    <footer class="bg-ink px-4 py-8 text-center text-sm text-white/70">
-      <img
-        src="assets/pinary-logo.svg"
-        alt="Pinary"
-        width="680"
-        height="190"
-        class="mx-auto mb-4 h-9 w-auto"
-      />
+    <footer class="site-footer">
+      <img src="assets/pinary-logo.svg" alt="Pinary Academy" width="680" height="190" />
       <p>Pinary Academy. Learn. Think. Innovate.</p>
+      <p class="image-credit">
+        Photos by
+        <a href="https://unsplash.com/photos/young-man-typing-on-a-laptop-in-a-classroom-HKnvq4krutI">Mikhail Seleznev</a>
+        and
+        <a href="https://unsplash.com/photos/person-working-on-a-laptop-coding-and-analyzing-data-Su1XYFlftXA">Hasnain Ayaz</a>
+        on Unsplash.
+      </p>
     </footer>
   </body>
 </html>
