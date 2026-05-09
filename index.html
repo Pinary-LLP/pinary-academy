@@ -64,8 +64,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/style.css" />
-    <link rel="icon" href="assets/pinary-logo.png" type="image/svg+xml" />
-    <link rel="preload" href="assets/pinary-logo.png" as="image" type="image/svg+xml" />
+    <link rel="icon" href="assets/icon.png" type="image/svg+xml" />
+    <link rel="preload" href="assets/icon.png" as="image" type="image/svg+xml" />
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
     <script src="assets/script.js" defer></script>
     <script type="application/ld+json">
@@ -176,13 +176,18 @@
         <a href="#" class="brand-link" aria-label="Pinary Academy home">
           <img src="assets/pinary-logo.png" alt="Pinary Academy logo" width="680" height="190" class="brand-logo" />
         </a>
-        <div class="nav-menu">
+        <div class="nav-menu" id="primary-nav">
           <a href="#roadmap">Roadmap</a>
           <a href="#outcomes">Outcomes</a>
           <a href="#mentors">Mentors</a>
           <a href="#faq">FAQ</a>
+          <a href="#registration" class="nav-cta">Book Free Counselling</a>
         </div>
-        <a href="#registration" class="header-cta">Book Free Counselling</a>
+        <button type="button" class="nav-toggle" id="navToggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
       </nav>
     </header>
 
@@ -260,7 +265,6 @@
               </select>
             </label>
             <button id="submitButton" type="submit">Submit Registration</button>
-            <p class="form-microcopy">No spam. We will contact you only about Pinary course admission and counselling.</p>
             <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
             <noscript>
               <p class="form-status error">Please email hello@pinary.academy because this form needs JavaScript to send registrations.</p>
@@ -424,7 +428,7 @@
         </div>
       </section>
 
-      <section class="section proof-section">
+      <!-- <section class="section proof-section">
         <div class="section-wrap proof-layout">
           <div>
             <p class="section-kicker">Transparent proof</p>
@@ -441,7 +445,7 @@
             <span>Replace with verified student quote after batch feedback is approved.</span>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="mid-cta">
         <div class="section-wrap mid-cta-layout">
@@ -501,9 +505,9 @@
             <a href="#registration" class="primary-cta">Book a Free Counselling Call <i data-lucide="arrow-right" aria-hidden="true"></i></a>
           </div>
           <address class="contact-details">
-            <p><span>Phone</span> +91 00000 00000</p>
-            <p><span>WhatsApp</span> +91 00000 00000</p>
-            <p><span>Email</span> <a href="mailto:hello@pinary.academy">hello@pinary.academy</a></p>
+            <!-- <p><span>Phone</span> +91 00000 00000</p>
+            <p><span>WhatsApp</span> +91 00000 00000</p> -->
+            <p><span>Email</span> <a href="mailto:pinaryofficial@gmail.com">pinaryofficial@gmail.com</a></p>
             <p><span>Location</span> Kerala, India</p>
           </address>
         </div>
