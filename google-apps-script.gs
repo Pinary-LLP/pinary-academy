@@ -27,7 +27,10 @@ function doPost(e) {
       params.name || "",
       params.whatsapp || "",
       params.current_status || "",
+      params.qualification || "",
       params.goal || "",
+      params.commitment || "",
+      params.seriousness || "",
       params.source || "Pinary website",
     ]);
 
@@ -67,7 +70,10 @@ function ensureHeaders(sheet) {
     "Name",
     "WhatsApp Number",
     "Current Status",
+    "Qualification",
     "Goal",
+    "Commitment (6 months)",
+    "Seriousness",
     "Source",
   ]);
 }

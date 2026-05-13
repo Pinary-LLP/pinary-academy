@@ -1,4 +1,4 @@
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzNQhphIa0_58CmkzYRUelFukE5bd13AXpcO0Dh2vpBytgN8hXKoxqSs72mT_uvqcc6Xw/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzcYysxo7kCnQQHXcqeoynL6yyT2YU6x_nBLSRgRlOf988Su8LKHbcXukoACyeiXwEHAQ/exec";
 
 const leadForm = document.querySelector("#leadForm");
 const submitButton = document.querySelector("#submitButton");

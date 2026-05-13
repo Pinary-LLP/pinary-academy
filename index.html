@@ -155,10 +155,10 @@
               },
               {
                 "@type": "Question",
-                "name": "What happens after I submit the counselling form?",
+                "name": "What happens after I submit the form?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "The Pinary team will contact you with course details, batch availability, and guidance based on your current level and goal."
+                  "text": "A Pinary career expert will call you with course details, batch availability, and guidance based on your current level and goal. Only 10 students are accepted per batch."
                 }
               }
             ]
@@ -169,7 +169,7 @@
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    <a href="#registration" class="mobile-sticky-cta">Book Free Counselling</a>
+    <a href="#registration" class="mobile-sticky-cta">Talk to a Career Expert</a>
 
     <header class="site-header">
       <nav class="site-nav" aria-label="Main navigation">
@@ -181,7 +181,7 @@
           <a href="#outcomes">Outcomes</a>
           <a href="#mentors">Mentors</a>
           <a href="#faq">FAQ</a>
-          <a href="#registration" class="nav-cta">Book Free Counselling</a>
+          <a href="#registration" class="nav-cta">Talk to a Career Expert</a>
         </div>
         <button type="button" class="nav-toggle" id="navToggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
           <span class="nav-toggle-bar"></span>
@@ -195,15 +195,15 @@
       <section class="hero-section">
         <div class="section-wrap hero-layout">
           <div class="hero-content">
-            <h1>Learn Coding with Mentor Support</h1>
+            <h1>Learn. Build. Earn.</h1>
             <p class="hero-lede">
               Learn coding, programming foundations, AI-assisted development, Git, teamwork, and project delivery with mentor support and weekly work reviews.
             </p>
             <div class="hero-actions">
-              <a href="#registration" class="primary-cta">Book Free Counselling <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+              <a href="#registration" class="primary-cta">Talk to a Career Expert <i data-lucide="arrow-right" aria-hidden="true"></i></a>
               <a href="#roadmap" class="secondary-cta">View Learning Roadmap</a>
             </div>
-            <p class="urgency-copy">Upcoming batch seats are limited. Apply early to get counselling and mentor review access.</p>
+            <p class="urgency-copy">Only 10 students accepted per batch. Apply early to secure your spot.</p>
 
             <div class="hero-proof" aria-label="Pinary course trust signals">
               <div><strong>Weekly</strong><span>mentor review</span></div>
@@ -227,9 +227,9 @@
 
           <form id="leadForm" class="lead-form hero-form" aria-label="Pinary course registration form" novalidate>
             <div class="form-intro" id="registration">
-              <p class="section-kicker">Admissions counselling</p>
-              <h2>Book a Free Counselling Call</h2>
-              <p>Share your details. We will call you with course details, batch availability, and the right learning path.</p>
+              <p class="section-kicker">Admissions</p>
+              <h2>Talk to a Career Expert</h2>
+              <p>Share your details. A career expert will call you, understand your goals, and help you find the right path forward.</p>
             </div>
             <input type="hidden" name="source" value="Pinary website" />
             <label class="honeypot-field" aria-hidden="true">
@@ -255,6 +255,18 @@
               </select>
             </label>
             <label>
+              <span>Qualification</span>
+              <select name="qualification" required>
+                <option value="">Choose one</option>
+                <option>10th Pass</option>
+                <option>12th Pass</option>
+                <option>Diploma</option>
+                <option>Graduate</option>
+                <option>Post Graduate</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>
               <span>Your Goal</span>
               <select name="goal" required>
                 <option value="">Choose one</option>
@@ -262,6 +274,24 @@
                 <option>Freelance</option>
                 <option>Skill Development</option>
                 <option>Not Sure</option>
+              </select>
+            </label>
+            <label>
+              <span>Ready to commit 6 months?</span>
+              <select name="commitment" required>
+                <option value="">Choose one</option>
+                <option>Yes, I am fully committed</option>
+                <option>Mostly — I need to plan my schedule</option>
+                <option>I need more information first</option>
+              </select>
+            </label>
+            <label>
+              <span>How serious are you about becoming a project-ready developer?</span>
+              <select name="seriousness" required>
+                <option value="">Choose one</option>
+                <option>Very serious — I want to start as soon as possible</option>
+                <option>Exploring my options right now</option>
+                <option>Just curious for now</option>
               </select>
             </label>
             <button id="submitButton" type="submit">Submit Registration</button>
@@ -332,7 +362,7 @@
             <p class="section-kicker">Learning roadmap</p>
             <h2>A calm path from beginner to project-ready</h2>
             <p>Each phase is designed to create a visible improvement in your coding, workflow, and confidence.</p>
-            <a href="#registration" class="inline-cta">Book Free Counselling</a>
+            <a href="#registration" class="inline-cta">Talk to a Career Expert</a>
           </div>
           <div class="roadmap-list">
             <article>
@@ -416,14 +446,24 @@
         <div class="section-wrap">
           <div class="section-heading">
             <p class="section-kicker">Student outcomes</p>
-            <h2>What students should be able to do after consistent practice</h2>
-            <p>No fake guarantees. The focus is on practical progress students can show, explain, and improve.</p>
+            <h2>What you will be capable of after completing the programme</h2>
+            <p>No fake guarantees. The focus is on practical progress students can show, explain, and build a career with.</p>
           </div>
           <div class="outcome-grid">
             <article><span>Portfolio-ready projects</span><p>Build work that can be shown during interviews or freelance discussions.</p></article>
             <article><span>Code review habits</span><p>Submit, receive feedback, fix, and improve instead of simply moving on.</p></article>
             <article><span>Interview confidence</span><p>Explain decisions, tools, bugs, and project flow in a clearer way.</p></article>
             <article><span>Client communication</span><p>Understand requirements, give updates, quote work, and deliver professionally.</p></article>
+          </div>
+          <div class="section-heading" style="margin-top:3rem;">
+            <p class="section-kicker">Career paths</p>
+            <h2>Skills and careers students are capable of reaching</h2>
+          </div>
+          <div class="outcome-grid">
+            <article><span>Junior Web Developer</span><p>Build and ship real projects, work in a team, and contribute to production codebases from day one.</p></article>
+            <article><span>Freelance Developer</span><p>Take client projects, write quotations, deliver work professionally, and build a steady income.</p></article>
+            <article><span>Project-Ready Contributor</span><p>Join startups, agencies, or remote teams with real Git workflow, code review habits, and communication skills.</p></article>
+            <article><span>Tech Entrepreneur</span><p>Build your own product or service using programming, AI-assisted development, and client management skills.</p></article>
           </div>
         </div>
       </section>
@@ -447,14 +487,47 @@
         </div>
       </section> -->
 
+      <section class="section not-for-section">
+        <div class="section-wrap">
+          <div class="section-heading">
+            <p class="section-kicker">Who this is not for</p>
+            <h2>Pinary is a serious programme for serious students</h2>
+            <p>We only accept 10 students per batch because we take each person's growth seriously. This means it is not the right fit for everyone.</p>
+          </div>
+          <div class="not-for-list">
+            <div class="not-for-item">
+              <i data-lucide="x-circle" aria-hidden="true"></i>
+              <div>
+                <strong>Students looking for shortcuts</strong>
+                <p>There are no tricks here. You will work weekly, get reviewed, and be expected to improve consistently.</p>
+              </div>
+            </div>
+            <div class="not-for-item">
+              <i data-lucide="x-circle" aria-hidden="true"></i>
+              <div>
+                <strong>Passive learners</strong>
+                <p>If you plan to watch and do nothing, this will not work. Weekly submissions and active participation are mandatory.</p>
+              </div>
+            </div>
+            <div class="not-for-item">
+              <i data-lucide="x-circle" aria-hidden="true"></i>
+              <div>
+                <strong>People expecting instant placement guarantees</strong>
+                <p>We build real skills, not empty promises. Growth takes time, commitment, and honest effort.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="mid-cta">
         <div class="section-wrap mid-cta-layout">
           <div>
             <p class="section-kicker">Need guidance?</p>
             <h2>Not sure whether this course matches your current level?</h2>
-            <p>Submit the form. The Pinary team will call you, understand your goal, and explain the right next step.</p>
+            <p>Submit the form. A career expert will call you, understand your goal, and explain the right next step.</p>
           </div>
-          <a href="#registration" class="primary-cta">Book Free Counselling <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+          <a href="#registration" class="primary-cta">Talk to a Career Expert <i data-lucide="arrow-right" aria-hidden="true"></i></a>
         </div>
       </section>
 
@@ -487,8 +560,8 @@
               <p>Yes. You will learn how to understand client requirements, give quotations, communicate professionally, close basic projects, and deliver work properly.</p>
             </details>
             <details>
-              <summary>What happens after I submit the counselling form?</summary>
-              <p>The Pinary team will contact you with course details, batch availability, and guidance based on your current level and goal.</p>
+              <summary>What happens after I submit the form?</summary>
+              <p>A Pinary career expert will call you with course details, batch availability, and guidance based on your current level and goal. Only 10 students are accepted per batch.</p>
             </details>
           </div>
         </div>
@@ -502,7 +575,7 @@
             <p>
               If you are serious about learning programming and building career-ready skills, Pinary gives you the structure, mentor support, and review system to grow with confidence.
             </p>
-            <a href="#registration" class="primary-cta">Book a Free Counselling Call <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+            <a href="#registration" class="primary-cta">Talk to a Career Expert <i data-lucide="arrow-right" aria-hidden="true"></i></a>
           </div>
           <address class="contact-details">
             <!-- <p><span>Phone</span> +91 00000 00000</p>
