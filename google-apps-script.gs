@@ -25,12 +25,10 @@ function doPost(e) {
     sheet.appendRow([
       new Date(),
       params.name || "",
-      params.whatsapp || "",
+      params.contact_number || params.whatsapp || "",
       params.current_status || "",
       params.qualification || "",
       params.goal || "",
-      params.commitment || "",
-      params.seriousness || "",
       params.source || "Pinary website",
     ]);
 
@@ -68,12 +66,10 @@ function ensureHeaders(sheet) {
   sheet.appendRow([
     "Timestamp",
     "Name",
-    "WhatsApp Number",
+    "Contact Number",
     "Current Status",
     "Qualification",
     "Goal",
-    "Commitment (6 months)",
-    "Seriousness",
     "Source",
   ]);
 }

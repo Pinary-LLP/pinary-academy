@@ -51,4 +51,4 @@ Update phone, WhatsApp, email, and location in the contact section of `index.htm
 
 ## Lead Form Fields
 
-The registration form captures name, WhatsApp number, current status, goal, and source. These same fields are written by `google-apps-script.gs`.
+The registration form captures name, contact number, current status, qualification, goal, and source. These same fields are written by `google-apps-script.gs`.
